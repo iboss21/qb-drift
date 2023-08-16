@@ -1,5 +1,5 @@
 Config = {}
--- KeyBind to switch in drift mode is L.SHIFT
+
 -- Whitelisted vehicle classes
 Config.VehicleClassWhitelist = {0, 1, 2, 3, 4, 5, 6, 7, 9}
 
@@ -19,5 +19,8 @@ Config.Messages = {
     StandardMode = "Vehicle is in standard mode!",
     DriftMode = "Enjoy driving sideways!"
 }
+
+-- Keybind for switching to drift mode (Left Shift)
+Config.DriftKeybind = 36 -- Change this to the desired key code
 
 return Config
