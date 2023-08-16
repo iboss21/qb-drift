@@ -69,4 +69,21 @@ function ToggleDrift(vehicle)
     end
 end
 
--- Rest of the script...
+function PrintDebugInfo(mode)
+    ped = GetPlayerPed(-1)
+    local vehicle = GetVehiclePedIsIn(ped, false)
+    print(mode)
+    for index, value in ipairs(Config.HandleMods) do
+        print(GetVehicleHandlingFloat(vehicle, "CHandlingData", value[1]))
+    end
+end
+
+function IsVehicleClassWhitelisted(vehicleClass)
+    for index, value in ipairs(Config.VehicleClassWhitelist) do
+        if value == vehicleClass then
+            return true
+        end
+    end
+
+    return false
+end
