@@ -21,3 +21,12 @@ AddEventHandler('qb-driftxp:updateXP', function(xp)
         Player.Functions.SetMetaData("driftxp", Player.PlayerData.metadata['driftxp'])
     end
 end)
+
+-- Command to switch to drift mode (/drift)
+QBCore.Commands.Add("drift", "Switch to drift mode", {}, false, function(source, args)
+    local src = source
+    local Player = QBCore.Functions.GetPlayer(src)
+    if Player then
+        TriggerClientEvent('qb-driftxp:toggleDrift', src)
+    end
+end)
