@@ -86,3 +86,13 @@ function IsVehicleClassWhitelisted(vehicleClass)
 
     return false
 end
+
+-- Keybind for switching to drift mode (Left Shift)
+Citizen.CreateThread(function()
+    while true do
+        Wait(0)
+        if IsControlJustReleased(0, Config.DriftKeybind) then
+            TriggerServerEvent('qb-driftxp:toggleDrift')
+        end
+    end
+end)
