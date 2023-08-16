@@ -5,7 +5,7 @@ author 'iBoss21'
 description 'QBCore Drift XP System'
 version '1.0.0'
 
-client_script 'client.lua'
-server_script 'server.lua'
+client_script 'client/client.lua'
+server_script 'server/server.lua'
 
 shared_script 'config.lua'
