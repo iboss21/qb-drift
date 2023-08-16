@@ -57,7 +57,7 @@ function ToggleDrift(vehicle)
         local currentTime = GetGameTimer()
         local timeDifference = (currentTime - lastDriftTime) / 1000
 
-        if timeDifference >= 60 then
+        if timeDifference >= 30 then  -- default is 30 seconds to hold car in drift mode to get xp.
             -- Give the player XP
             local PlayerData = QBCore.Functions.GetPlayerData()
             PlayerData.metadata['driftxp'] = (PlayerData.metadata['driftxp'] or 0) + 1
