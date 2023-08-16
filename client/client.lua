@@ -1,5 +1,5 @@
 local QBCore = exports['qb-core']:GetCoreObject()
-local Config = require('config')
+local Config = require('config.lua')
 
 local ped, vehicle
 local driftMode = false
