@@ -69,6 +69,17 @@ function ToggleDrift(vehicle)
     end
 end
 
+-- Server event to toggle drift mode
+RegisterNetEvent('qb-driftxp:toggleDrift')
+AddEventHandler('qb-driftxp:toggleDrift', function()
+    local ped = GetPlayerPed(-1)
+    local vehicle = GetVehiclePedIsIn(ped, false)
+    
+    if IsPedInAnyVehicle(ped) and GetPedInVehicleSeat(vehicle, -1) == ped then
+        ToggleDrift(vehicle)
+    end
+end)
+
 function PrintDebugInfo(mode)
     ped = GetPlayerPed(-1)
     local vehicle = GetVehiclePedIsIn(ped, false)
