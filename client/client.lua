@@ -86,7 +86,6 @@ function IsVehicleClassWhitelisted(vehicleClass)
 
     return false
 end
-
 -- Keybind for switching to drift mode (Left Shift)
 Citizen.CreateThread(function()
     while true do
