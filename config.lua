@@ -23,4 +23,7 @@ Config.Messages = {
 -- Keybind for switching to drift mode (Left Shift)
 Config.DriftKeybind = 36 -- Change this to the desired key code
 
+-- Time interval (in seconds) to receive XP points for drifting
+Config.DriftXPInterval = 60 -- Change this value to the desired interval
+
 return Config
