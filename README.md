@@ -19,7 +19,7 @@ Usage
 Players can enter drift mode by performing specific actions while in a qualifying vehicle. Successfully drifting without crashing or damaging the car will earn them XP points.
 
 Credits
-This resource was created by [Your Name].
+This resource was created by [iBoss21].
 
 License
 This resource is provided under the MIT License.
@@ -29,6 +29,10 @@ Product Description:
 TheLux-QBDrift is an immersive drift XP system for the QBCore framework in FiveM. With this resource, you can bring an exciting skill-based element to your server's driving experience. Players will be rewarded for their drifting prowess by earning XP points for each successful drift. The system is fully customizable, allowing you to define vehicle classes that qualify for drift XP and fine-tune handling modifications to create the ultimate drifting challenge. Engage your players with dynamic notifications that keep them informed of their XP progress as they master the art of drifting.
 
 Installation Instructions:
+
+1. Step: add this code to qb-core/server/player.lua
+2.     PlayerData.metadata['driftxp'] = PlayerData.metadata['driftxp'] or 0
+
 
 Ensure that you have the QBCore framework installed on your FiveM server.
 Download the "TheLux-QBDrift" resource from GitHub.
