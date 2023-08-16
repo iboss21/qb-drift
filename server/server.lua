@@ -27,6 +27,4 @@ QBCore.Commands.Add("drift", "Switch to drift mode", {}, false, function(source,
     local src = source
     local Player = QBCore.Functions.GetPlayer(src)
     if Player then
-        TriggerClientEvent('qb-driftxp:toggleDrift', src)
-    end
-end)
+        TriggerClientEvent('qb-driftxp:toggleDrift',
